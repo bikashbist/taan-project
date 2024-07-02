@@ -1761,6 +1761,13 @@ button.owl-dot.active {
     font-weight: 500;
     border-radius: 30px;
   }
+  .tour_attribute_share a {
+    border: 1px solid #ff4a52;
+    padding: 4px 13px;
+    display: inline-block;
+    color: #ff4a52;
+    font-size: 12px;
+  }
 }
 @media (max-width: 1199.98px) {
   .banner__article {
