@@ -1,0 +1,311 @@
+.inner-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fbfbfbfb;
+        // background-image: linear-gradient(transparent 0%, transparent 60%, rgba(0, 0, 0, 0.1) 66%, rgba(0, 0, 0, 0.5) 93%, rgba(0, 0, 0, 0.49) 100%);
+        background: rgba(0, 0, 0, 0.3803921569);
+        z-index: 1;
+    }
+
+    &__navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        z-index: 99;
+
+        h1 {
+            font-family: "Literata", serif;
+            font-size: 58px;
+            font-weight: 700;
+            text-shadow: 2px 3px 0px #000;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: #fff;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+    }
+
+}
+
+.main-content {
+    &__sidebar {
+        position: sticky;
+        top: 120px;
+        z-index: 99;
+    }
+}
+
+.trail-page {
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+    &__title {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 20px 0px;
+        border: 1px solid #ccc;
+    }
+
+    .inner-banner__nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        bottom: -40px;
+
+        h1 {
+            font-size: 32px;
+            color: #000 !important;
+        }
+
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.trail-details {
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.page_content {
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.trail-packages {
+    .section__title h3 {
+        font-size: 34px;
+        font-weight: 600;
+        font-family: "Taviraj", serif;
+       
+    }
+    &__card {
+        border-radius: 5px;
+        overflow: hidden;
+        a.tour_image {
+            display: block;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+            .tour-band{
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                background: #4da42f;
+                border-radius: 0px 20px 20px 0px;
+                padding: 5px 10px 3px 10px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 15px;
+                transition-duration: 0.2s;
+            }
+        }
+
+    }
+}
+.portfolio_info_wrapper{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+    a{
+        text-decoration: none;
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+            font-family: $font-poppins;
+            color: #213245;
+        }
+
+    }
+    span{
+        font-size: 14px;
+        padding-top: 0px;
+        margin-top: 0px;
+        font-family: "Mulish", sans-serif;
+        color: #222222;
+        i{
+            color: $primary-color;
+        }
+    }
+}
+.br-widget {
+    a.br-selected:after {
+        content: '\f005';
+        color: #50E3C2;
+        content: "\25AE";  
+        font-family: FontAwesome;
+        left:-5px;
+        position:absolute;
+        top:0;
+    }
+   
+}
+.tour_attribute_wrapper{
+    .tour_attribute_share{
+        a{
+            border: 1px solid #ff4a52;
+            padding: 4px 13px;
+            display: inline-block;
+            color: #ff4a52;
+        }
+    }
+    .tour_attribute_link{
+        i{
+            color: $primary-color;
+        }
+        a{
+            color: #222222;
+            font-size: 14px;
+            font-family: 'Poppins';
+        }
+    }
+}
+.member-profile{
+    .member-heading{
+        background-color: $primary-color;
+        position: relative;
+        height: 100px;
+    }
+  
+    .company-log {
+        img{
+            background-color: #fafafa;
+            padding: 5px;
+            height: 44px;
+            width: auto;
+            margin: 10px;
+        }
+    }
+    .company-detail{
+        margin-top: -44px;
+        padding-left: 16px;
+        .member-sketch{
+            z-index: 99;
+            background: white;
+            padding: 3px;
+            border-radius: 5px;
+            img{
+                width: 80px;
+                height: 80px;
+                background: #ffffff;
+                border-radius: 5px;
+            }
+        }
+        .profile-details{
+            z-index: 99;
+            margin-left: 16px;
+            h4 {
+                font-size: 18px;
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+            p{
+                margin-bottom: 0px;
+                font-size: 14px;
+                color: #141414;
+                font-weight: 700;
+            }
+        }
+      
+    }
+    .contact-details{
+        span{
+            font-size: 16px;
+            color: #333333;
+            font-weight: 500;
+            font-family: 'Poppins';
+        }
+        .phone-number{
+            a{
+                font-weight: 600;
+            }
+        }
+        .btn-contact{
+            background-color: $primary-color;
+            border-radius: 20px;
+            font-weight: 500;
+         
+        }
+    }
+}
+.page_content{
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $font-poppins;
+    }
+    .trail-package{
+        .trails-list--title{
+            line-height: 33px;
+            span{
+                color: $primary-color;
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: $black-color;
+            }
+        }
+    }
+}
+.map {
+    border: 1px solid #ccc;
+    height: 500px;
+    overflow-y: scroll; /* Ensure vertical scroll */
+    overflow-x: hidden; /* Hide horizontal scroll */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional, if you want rounded corners for the map box */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.map::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 10px;
+}
+
+.map::-webkit-scrollbar-thumb {
+    background-color: #4da32f;
+    border-radius: 10px; 
+}
+
+/* Firefox */
+.map {
+    scrollbar-width: thin;
+    scrollbar-color: #4da32f transparent;
+}
+
+
+.map::-webkit-scrollbar-thumb {
+    background-color: #4da32f;
+    border-radius: 10px;
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taan Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+ 
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header">
+        <div class="container">
+            <div class="header__content d-flex align-itemsp-center justify-content-between flex-wrap">
+                <div class="d-flex align-items-center">
+                    <p class="pe-lg-5">+977-1-4540920, 4540921, 4527473</p>
+                    <div class="d-flex">
+                        <img src="images/flag.png" alt="flag">
+                        <p class="taan">Official website of Trekking Agencies' Association of Nepal (TAAN)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/taan-logo.jpg" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-lg-end mx-auto mb-2 mb-lg-0 d-flex justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Members <i class="fas fa-chevron-down dropdown-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="member.html">Associate Member</a></li>
+                  <li><a class="dropdown-item" href="member-page.html">Associate Member Detail</a></li>
+                  <li><a class="dropdown-item" href="package-details.html">Associate Member Package Detail </a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="trail.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Trail Profile <i class="fas fa-chevron-down dropdown-icon"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="trail.profile.html" target="_blank">Trail Profile</a></li>
+                  <li><a class="dropdown-item" href="trail-details.html" target="_blank">Everest Base Camp Trek</a></li>
+                  <li><a class="dropdown-item" href="package-details.html" target="_blank">Everest Base Camp Trek Detail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="introduction.html" role="button" >
+                  About us 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button" aria-expanded="false">
+                  TIMs
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button" aria-expanded="false">
+                  FAQs
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center mobile-r-c" role="search">
+              <a href="#"><button class="btn btn-login be-member" type="submit">Sign In</button></a>
+              <a href="#"><button class="btn btn-signup btn-bg ms-2" type="submit"><i class="fa-regular fa-user"></i>
+                  Become a member
+                </button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+    <div class="trail-profile  pb-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-10 col-12 mx-auto">
+                    <h1 class="text-center py-lg-5 py-3">Looking For New Trail?</h1>
+                    <div class="trail-profile--meta-search text-center">
+                        <span data-value="Search Trails"> <i class="fa-solid fa-magnifying-glass"></i> Search
+                            Trail</span>
+                        <span data-value="Upsection-trail Trails"> <i class="fa-solid fa-magnifying-glass"></i>
+                            Up Coming Trail</span>
+                        <span data-value="New Trails"> <i class="fa-solid fa-magnifying-glass"></i> New Trail</span>
+                        <span data-value="Existing Trails"> <i class="fa-solid fa-magnifying-glass"></i> Existing
+                            Trail</span>
+                    </div>
+
+                    <div class="search-trail">
+                        <form id="searchForm" action="#">
+                            <div class="d-flex align-items-center justify-content-between search-trail__search">
+                                <div class="search-trail__search--input d-flex align-items-center flex-fill">
+                                    <b><i class="fa-solid fa-magnifying-glass"></i></b>
+                                    <input id="searchInput" class="search-trail__search--input-type" type="text"
+                                        placeholder="Search Trails">
+                                </div>
+                                <button id="searchButton" class="btn-search" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            </div>
+                        </form>
+                      
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-lg-5 pt-3 mt-3">
+                    <div class="trail-card ">
+                        <img src="images/home-banner.png" alt="banner">
+                        <div class="trail-card__details d-flex justify-content-center align-items-center">
+                            <div class="trail-card__content text-center">
+                                <h1 class="text-white title">Start planning your next trail adventure</h1>
+                                <p class="text-white subtitle ">TAAN helps adventure-seekers plan and book travel to
+                                    some of the most popular mountain destinations around the Nepal</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-trail mb-3">
+        <div class="container">
+            <!-- <div class="section__title text-left">
+                <h3>
+                    What is Trail?
+                    </h1>
+                    <p class="py-3">A
+                        trail
+                        , also known as a path or track, is an <span>unpaved lane</span> or a
+                        small <span> paved</span> road not intended for usage by motorized <span>vehicles </span> ,
+                        usually passing
+                        through a <span>natural</span> area. In the <span>Nepal</span> <span>
+                            Kingdom
+                        </span> and <span>mountain</span> , a path or <span> footpath </span> is the
+                        preferred term for a pedestrian or <span>hiking </span> trail...</p>
+
+                    <h4>Trail Packages</h4>
+            </div> -->
+            <div class="section-trail__details">
+                <div class="row gx-4 ">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="trail-details.html">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="images/trail/things-to-do-in-kathmandu-300x200.jpg" alt=""
+                                            class="img">
+                                        <div class="tag up-coming  px-4">
+                                            <img src="images/trail/soon.svg" alt="coming soon">
+                                        </div>
+                                        <!-- <div class="bagde-flag-wrap">
+                                            <a href="#" class="bagde-flag"> NEw </a>
+                                          </div> -->
+                                        <div class="trail-packages">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Kathmandu, Chitwan, Pokhara
+                                        </small>
+                                        <h5>Things To Do In Kathmandu – 11 Must See And Do Activities In Nepal’s
+                                            Capital </h5>
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="trail-details.html">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="images/trail/Climbers-side-Nepali-Mount-Everest.webp" alt="" class="img">
+                                        <div class="bagde-flag-wrap">
+                                            <a href="#" class="bagde-flag"> NEW </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Solukhumbu Nepal -10
+                                        </small>
+                                        <a href="trail-details.html">      <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5></a>
+                                   
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="trail-details.html">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="images/trail/Climbers-side-Nepali-Mount-Everest.webp" alt="" class="img">
+                                        <div class="bagde-flag-wrap">
+                                            <a href="#" class="bagde-flag"> NEW </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Solukhumbu Nepal -10
+                                        </small>
+                                        <a href="trail-details.html">      <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5></a>
+                                   
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="https://media.everestbasecamptravel.com/uploads/package/namche-helicopter-flight.webp"
+                                            alt="" class="img">
+                                        <div class="bagde-flag-wrap">
+                                            <a href="#" class="bagde-flag"> NEW </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Kathmandu, Chitwan, Pokhara
+                                        </small>
+                                        <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="https://media.everestbasecamptravel.com/uploads/package/namche-helicopter-flight.webp"
+                                            alt="" class="img">
+                                        <div class="bagde-flag-wrap">
+                                            <a href="#" class="bagde-flag"> NEW </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal </small>
+                                        <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="https://media.everestbasecamptravel.com/uploads/package/namche-helicopter-flight.webp"
+                                            alt="" class="img">
+
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal </small>
+                                        <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="https://media.everestbasecamptravel.com/uploads/package/namche-helicopter-flight.webp"
+                                            alt="" class="img">
+
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal </small>
+                                        <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="section-trail__details__list">
+                                <div class="section-trail__details__list__box">
+                                    <div class="logo-img">
+                                        <img src="https://media.everestbasecamptravel.com/uploads/package/namche-helicopter-flight.webp"
+                                            alt="" class="img">
+
+                                    </div>
+
+                                    <div class="text">
+
+                                        <small><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal </small>
+                                        <h5>Everest Base Camp Trek - 13 Things to Know for Your Trip</h5>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div> <!-- list section-trail -->
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- up section-trail trail -->
+
+    <footer class="footer mt-lg-5 mt-3">
+        <div class="container">
+            <div class="row g-lg-5 g-3 ">
+                <div class="col-lg-4 col-md-4 col-12 pr-md-5 mb-4 mb-md-0">
+                    <h3>About Us</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde
+                        facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime
+                        est, blanditiis accusamus. Incidunt, aut, quis!</p>
+                    <ul class="list-unstyled quick-info mb-4">
+                        <li><a href="#" class="d-flex align-items-center"><span class="me-3 "><i class="fa-solid fa-phone"></i></span> +1
+                                291 3912 329</a></li>
+                        <li><a href="#" class="d-flex align-items-center"><span class="me-3"><i class="fa-solid fa-envelope"></i></span>
+                                info@gmail.com</a></li>
+                    </ul>
+                    <form action="#" class="subscribe">
+                        <input type="text" class="form-control" placeholder="Enter your e-mail">
+                        <input type="submit" class="btn btn-submit" value="Send">
+                    </form>
+                </div>
+                <div class="col-lg-5 col-md-4 col-12 mb-4 mb-md-0">
+                    <h3>Latest Trails</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde
+                        facere repellendus,</p>
+                    <ul class="list-unstyled trails-list">
+                        <li class="trail-package">
+                           
+                            <div class="trails-list--title d-flex">
+                                <span class="me-2"><i class="fa-solid fa-right-long"></i> </span>
+                                <a href="#"> Everest Base Camp Helicopter Tour</a>
+                            </div>
+
+                        </li>
+                        <li class="trail-package">
+                           
+                            <div class="trails-list--title d-flex">
+                                <span class="me-2"><i class="fa-solid fa-right-long"></i> </span>
+                                <a href="#">  Annapurna Base Camp Trek - 7 Days</a>
+                            </div>
+
+                        </li>
+                        <li class="trail-package">
+                        
+                            <div class="trails-list--title d-flex">
+                                <span class="me-2"><i class="fa-solid fa-right-long"></i> </span>
+                                <a href="#">  Everest Base Camp Trek - 14 Days</a>
+                            </div>
+
+                        </li>
+                        <li class="trail-package">
+                        
+                            <div class="trails-list--title d-flex">
+                                <span class="me-2"><i class="fa-solid fa-right-long"></i> </span>
+                                <a href="#">  Everest Base Camp Trek - 13 Things to Know for Your Trip</a>
+                            </div>
+
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
+                    <h3>Photo Gallery</h3>
+                    <div class="row gallery">
+                        <div class="col-6">
+                            <a href="#"><img src="images/banner/homeHeroBg.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="#"><img src="images/trail/america-gded4fdb31_640-300x169.jpg" alt="Image" class="img-fluid"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#"><img src="images/trail/annapurna-circuit-trekking.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="#"><img src="images/trail/Places_to_visit_in_Amsterdam_1ce96543b6.webp" alt="Image" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="py-5 footer-menu-wrap d-flex flex-wrap justify-content-between align-items-center">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Trail</a></li>
+                            <li><a href="#">Members</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Become a member</a></li>
+                        </ul>
+                        <div class="site-logo-wrap ml-auto">
+                            <a href="#" class="site-logo text-white">
+                                SoftTech
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-section-trail').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            nav: true,
+            items: 3,
+            margin: 20,
+            dots: false,
+            navText: ['<span class="fas fa-chevron-left fa-1x"></span>',
+                '<span class="fas fa-chevron-right fa-1x"></span>'
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                    dots: true,
+                },
+                450: {
+                    items: 1,
+                    nav: false,
+                    dots: true,
+
+                },
+                575: {
+                    items: 1,
+                    nav: false,
+                    dots: true,
+
+                },
+                767: {
+                    items: 2,
+                },
+                991: {
+                    items: 4,
+                },
+                1199: {
+                    items: 4,
+                },
+                1399: {
+                    items: 4,
+
+                },
+                1439: {
+                    items: 4,
+
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
+

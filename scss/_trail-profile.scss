@@ -1,0 +1,346 @@
+.trail-profile {
+
+    h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 65px;
+        font-family: $font-poppins;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .search-trail {
+        #searchInput {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        #searchInput:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        &__search {
+            margin: 30px 0 0;
+            padding: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1215686275);
+            border: 1px solid $border-color;
+            transition: border-color 0.3s;
+            border-radius: 40px;
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            line-height: 50px;
+            background: $white-color;
+
+            &:focus-within {
+                border-color: $primary-color;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 18px;
+            }
+
+            b {
+                padding: 0px 8px 0px 15px;
+                font-size: 16px;
+                color: #7b7b7b;
+            }
+
+            &--input-type {
+                width: 90%;
+                border: none;
+            }
+
+            .btn-search {
+                background: $primary-color;
+                border: none;
+                padding: 0px 20px;
+                border-radius: 30px;
+                color: #fff;
+
+                i {
+                    color: $white-color;
+                }
+
+            }
+        }
+    }
+
+    &--meta-search {
+        span {
+            color: #424242;
+            padding: 6px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0px 0px;
+            background: #FFFFFF;
+            border: 1px solid #d9d9d9;
+            font-family: $font-poppins;
+        }
+    }
+}
+
+.trail-card {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+
+    .title {
+        font-weight: 700;
+        font-family: "Literata", serif;
+        font-size: 62px !important;
+        line-height: 1.2em !important;
+    }
+
+    .subtitle {
+        width: 70%;
+        margin: 0 auto;
+        /* line-height: 1.75; */
+        /* letter-spacing: 0.5px; */
+        font-size: 20p
+    }
+
+    &__details {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #00000061;
+    }
+
+    &__content {
+        width: 70%;
+
+        span {
+            font-size: 20px;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.section-trail {
+    p {
+        font-weight: 600;
+    }
+
+    h4 {
+        color: #212529;
+        font-family: "Literata", serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .section__title {
+        h3 {
+            margin: 0 0 15px;
+            font-weight: 600;
+            font-family: $font-poppins;
+            font-size: 34px;
+            line-height: 1.4em;
+            font-family: "Taviraj", serif;
+            position: relative;
+            display: inline-block;
+        }
+
+        // h3::after {
+        //     content: "";
+        //     position: absolute;
+        //     left: 100%;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     width: 150px;
+        //     height: 1px;
+        //     background-color: #4da42f;
+        //     margin-left: 10px;
+        // }
+
+        span {
+            color: #4da42f;
+        }
+    }
+
+    .tag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+
+        &.up-coming {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(0 0 0 / 61%);
+            img {
+                -o-object-fit: contain;
+                object-fit: contain;
+               
+                width: 150px;
+                height: 150px;
+              
+            }
+
+        }
+    }
+
+
+
+    &__details {
+        .owl-nav button.disabled {
+            opacity: 1 !important;
+
+        }
+
+        &__list {
+            &__box {
+                // border: 1px solid $border-color;
+              
+                margin: 20px 0px 0px;
+                position: relative;
+                height: auto;
+
+                .logo-img {
+                    height: 100%;
+                    height: 200px;
+                    position: relative;
+                  
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .text {
+                    color: $black-color;
+                    a{
+                        color: #212529;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        line-height: 26px;
+                        font-family: "Literata", serif;
+                    }
+                   
+                    small {
+                        display: block;
+                        color: #424242;
+                        padding: 15px 0px 6px;
+                        letter-spacing: 0.5px;
+                        i{
+                            color: $primary-color;
+                            padding-right: 2px;
+                        }
+                    }
+                }
+                .bagde-flag-wrap {
+                    position: absolute;
+                    top: 20px;
+                    left: -12px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 35px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 12px 12px 0;
+                        border-color: transparent #4da42f transparent transparent;
+                    }
+                    .bagde-flag {
+                        text-transform: capitalize;
+                        color: #ffffff;
+                        background: #4da42f;
+                        letter-spacing: 0;
+                        font-size: 14px;
+                        line-height: 15px;
+                        font-weight: 600;
+                        padding: 10px 15px;
+                        display: block;
+                        font-family: $font-poppins;
+                        text-decoration: none;
+                        border-radius: 0px 20px 20px 0px;
+                    }
+                }
+
+                .price-tag {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 20px;
+                    transform: translate(-50%, 0);
+                    z-index: 999;
+                    color: #f9f9f9;
+                    background: $primary-color;
+                    padding: 6px 20px;
+                    border-radius: 20px;
+
+                    p {
+                        color: #fff;
+                        margin-bottom: 0px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// .trail-list{
+//     width: 100%;
+//     &__details{
+//         padding: 30px;
+//         border: 1px solid #d9d9d9;
+//         border-top: 4px solid $primary-color;
+//         b{
+//             color: #343a40;
+//             font-size: 18px;
+//             font-family: 'Poppins';
+//             font-weight: 600;
+//         }
+//         a{
+//             text-decoration: none;
+//             color: #212529;
+//             font-weight: 600;
+//             letter-spacing: 0.5px;
+//         }
+//       .trip-img{
+//         width: 200px;
+//         height: 40px;
+//         object-fit: cover;
+//         border: 2px solid #ccc;
+//       }
+//       .read-more-trail{
+//         border: 1px solid $primary-color;
+//         padding: 6px 20px;
+//         color: $primary-color;
+//         text-decoration: none;
+//         display: ruby-text;
+//         font-size: 14px;
+//         height: 30px;
+//         border-radius: 5px;
+//       }
+//     }
+// }

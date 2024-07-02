@@ -1,0 +1,134 @@
+.sidebar{
+
+    h3{
+      
+
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        background: #fdfdfd;
+        border-radius: 5px 5px 0px 0px;
+        padding: 15px 20px;
+        color: #333030;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+    &.trail-details-sidebar{
+        h3{
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 600;
+            background: #4da32f;
+            border-radius: 5px 5px 0px 0px;
+            padding: 15px 20px;
+            color: #fff;
+            font-family: $font-poppins;
+            margin-bottom: 0px;
+        }
+     
+    }
+    &__package{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style-type: none;
+                display: inline-block;
+            }
+        }
+    
+        .post_circle_thumb {
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            float: left;
+            width: 85px;
+            height: 85px;
+            float: left;
+            margin-right: 0;
+            img{
+                float: left;
+                margin: 0 10px 2px 0;
+                width: 70px;
+                height: 70px;
+                border-radius: 250px;
+            }
+        }
+        a{
+            color: #222222;
+            font-weight: 700;
+            letter-spacing: 0;
+            text-decoration: none;
+            font-family:$font-poppins;
+        }
+        .post_attribute{
+            padding: 0;
+            margin-top: 0;
+            color: #999;
+            letter-spacing: 0;
+            font-size: 11px;
+            font-weight: 600;
+            font-family: Poppins, 'Georgia', Arial, Verdana, sans-serif;
+            margin-top: 5px;
+        }
+    }
+}
+.sidebar-profile{
+    background: #f2f7f1;
+
+    border-radius: 5px;
+}
+.sidebar-border{
+    border: 1px solid #dce0e0;
+}
+.sidebar-package-overview{
+    border-radius: 5px;
+}
+.sidebar_widget{
+    list-style: none;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .flickr{
+
+        list-style: none;
+        margin: 10px 0 -10px 0;
+        float: left;
+        display: block;
+        clear: both;
+        width: 104%;
+        padding: 15px 0 3px 0;
+
+        li{
+            display: block;
+            float: left;
+            margin: 0 0 5px 0;
+            padding: 0;
+            border: 0;
+            clear: none;
+            width: 33%;
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+    }
+   
+}
+.trail-gallery{
+    a{
+        display: block;
+    }
+    img{
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 5px;
+    }
+}

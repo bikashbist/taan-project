@@ -1,0 +1,51 @@
+//registration-page css start
+.registerpage {
+    .register {
+        background-color: rgb(228, 228, 228);
+        padding: 30px 50px;
+        width: 85%;
+        margin: 0 auto;
+        h3{
+            font-family: $font-taviraj;
+            font-size: 35px;
+            color: $primary-color;
+        }
+
+        form{
+            line-height: 2;
+            label{
+                font-size: 15px;
+                color: rgb(102, 101, 101);
+
+            }
+            select{
+                width: 100%;
+                padding: 15px 15px 15px 25px;
+                border: 1px solid $border-color;
+                border-radius: 30px;
+
+            }
+            .form-input{
+                width: 100%;
+                padding: 10px 15px 10px 25px;
+                border: 1px solid $border-color;
+                border-radius: 30px;
+                
+            }
+            .fclass{
+                border: 0;
+            }
+            button{
+                padding: 10px 30px;
+                background-color: $primary-color;
+                border: 1px solid $primary-color;
+                color: $white-color;
+                font-weight: 500;
+                border-radius: 30px;
+
+            }
+        }
+    }
+}
+
+//registration-page css end
