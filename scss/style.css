@@ -276,6 +276,25 @@
 .inner-banner__navbar .breadcrumb-item + .breadcrumb-item::before {
   color: #fff;
 }
+.inner-banner__navbar .quick-view {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+.inner-banner__navbar .quick-view .quick-detail {
+  background: rgba(3, 9, 0, 0.6509803922);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.inner-banner__navbar .quick-view .quick-detail a {
+  color: #fff;
+  text-decoration: none;
+}
+.inner-banner .member-page .quick-view {
+  position: absolute;
+  right: 60px;
+  bottom: 100px;
+}
 .inner-banner img {
   width: 100%;
   height: 100%;
@@ -468,6 +487,8 @@
 .page_content h2 {
   font-size: 20px;
   font-weight: 600;
+  border-bottom: 2px solid #4da42f;
+  padding-bottom: 15px;
   font-family: "Poppins", sans-serif;
 }
 .page_content .trail-package .trails-list--title {
@@ -1120,6 +1141,7 @@ img.img {
 }
 
 .navbar {
+  transition: top 0.3s;
   border-bottom: 1px solid #d9d9d9;
 }
 .navbar img {
