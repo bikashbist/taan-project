@@ -175,7 +175,16 @@
         </div>
         <div class="col-lg-6">
           <div class="about-team--img">
-            <img src="images/about/about_image_2.png" alt="">
+            <!-- <img src="images/about/about_image_2.png" alt=""> -->
+            <a class="video__wrapper" href="https://www.youtube.com/watch?v=BchpIcqJy8w" data-fancybox="gallery">
+              <img src="images/about/about_image_2.png" />
+              <div class="video__play-icon">
+                <span>
+                  <i class="fa-regular fa-circle-play"></i>
+                </span>
+  
+              </div>
+            </a>
           </div>
 
         </div>
@@ -272,7 +281,7 @@
           </h1>
           <p class="text-white">Initially, TAAN had limited its membership only to Nepalese trekking agencies.</p>
       </div>
-      <div class="row">
+      <div class="owl-carousel owl-theme owl-achivement">
         <div class="col">
           <div class="achivements__details">
 
@@ -317,7 +326,24 @@
             </div>
           </div>
         </div>
-
+        <div class="col">
+          <div class="achivements__details">
+            <div class="achivements__details__list__box">
+              <div class="logo-img">
+                <img src="images/about/trustpilot-logo.png" alt="" class="img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="achivements__details">
+            <div class="achivements__details__list__box">
+              <div class="logo-img">
+                <img src="images/about/trustpilot-logo.png" alt="" class="img">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col">
           <div class="achivements__details">
 
@@ -329,6 +355,15 @@
             </div>
 
 
+          </div>
+        </div>
+        <div class="col">
+          <div class="achivements__details">
+            <div class="achivements__details__list__box">
+              <div class="logo-img">
+                <img src="images/about/trustpilot-logo.png" alt="" class="img">
+              </div>
+            </div>
           </div>
         </div>
         <div class="col">
@@ -758,7 +793,7 @@
             <div class="destination__details__list">
               <div class="destination__details__list__box">
                 <div class="logo-img">
-                  <img class="owl-lazy" data-src="images/about/1.jpg" data-src-retina="images/trail/1.webp" alt="img">
+                  <img class="owl-lazy" data-src="images/pokhara.webp" data-src-retina="images/pokhara.webp" alt="img">
                 </div>
 
               
@@ -795,7 +830,7 @@
             <div class="destination__details__list">
               <div class="destination__details__list__box">
                 <div class="logo-img">
-                  <img class="owl-lazy" data-src="images/about/1.jpg" data-src-retina="images/trail/1.webp" alt="img">
+                  <img class="owl-lazy" data-src="images/pokhara.webp" data-src-retina="images/pokhara.webp" alt="img">
                 </div>
               
                 <div class="text">
@@ -831,7 +866,7 @@
             <div class="destination__details__list">
               <div class="destination__details__list__box">
                 <div class="logo-img">
-                  <img class="owl-lazy" data-src="images/about/1.jpg" data-src-retina="images/trail/1.webp" alt="img">
+                  <img class="owl-lazy" data-src="images/dhangadhi.jpg" data-src-retina="images/dhangadhi.jpg" alt="img">
                 </div>
               
                 <div class="text">
@@ -1678,15 +1713,15 @@
     });
   </script>
   <script>
-    $('.owl-feature').owlCarousel({
+    $('.owl-achivement').owlCarousel({
       loop: true,
       autoplay: true,
-      autoplayTimeout: 4000,
+      autoplayTimeout: 2000,
       autoplayHoverPause: true,
       responsiveClass: true,
-      nav: true,
+      nav: false,
       lazyLoad:true,
-      items: 4,
+      items: 6,
       margin: 20,
       dots: true,
       navText: ['<span class="fas fa-chevron-left fa-1x"></span>',
@@ -1703,29 +1738,29 @@
 
         },
         575: {
-          items: 1,
+          items: 2,
           nav: false,
 
 
         },
         767: {
-          items: 2
-        },
-        991: {
           items: 3
         },
-        1199: {
+        991: {
           items: 4
         },
+        1199: {
+          items: 5
+        },
         1399: {
-          items: 4,
+          items: 6,
           dots: true,
-          nav: true,
+          nav: false,
         },
         1439: {
-          items: 4,
+          items: 6,
           dots: true,
-          nav: true,
+          nav: false,
         }
       }
     });

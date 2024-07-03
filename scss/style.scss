@@ -155,6 +155,14 @@ img.img {
         color: #000000;
         font-weight: 500;
         border-radius: 30px;
+        position: relative;
+        background: linear-gradient(to left, #ffffff 50%, #1D8348 50%) right;
+        background-size: 200%;
+        transition: 0.5s ease-out;
+        &:hover{
+            background-position: left;
+            color: #fff;
+        }
     }
 
     .btn-signup {
@@ -246,9 +254,9 @@ img.img {
             border: 1px solid $border-color;
             border-radius: 40px;
             display: flex;
-            width: 100%;
+            width: 90%;
             max-width: 100%;
-            line-height: 50px;
+            line-height: 48px;
             background: #ffffff;
             #searchInput {
                 border: none;
@@ -269,7 +277,7 @@ img.img {
 
             b {
                 padding: 0px 8px 0px 15px;
-                font-size: 24px;
+                font-size: 18px;
                 color: #495057;
             }
 
@@ -576,9 +584,9 @@ button.owl-dot.active {
                     left: 0;
                     top: 0;
                     right: 0;
-                    -webkit-box-shadow: inset 6px -200px 157px -10px rgb(0 0 0 / 74%);
-                    -moz-box-shadow: inset 6px -200px 157px -10px rgb(0 0 0 / 74%);
-                    box-shadow: inset 6px -200px 157px -10px rgb(0 0 0 / 74%);
+                    -webkit-box-shadow: inset 6px -101px 34px -25px rgba(0, 0, 0, 0.74);
+                    -moz-box-shadow: inset 6px -101px 34px -25px rgba(0, 0, 0, 0.74);
+                    box-shadow: inset 6px -101px 34px -25px rgba(0, 0, 0, 0.74);
                     padding: 20px 20px;
                     text-align: center;
                     color: $white-color;
@@ -612,124 +620,124 @@ button.owl-dot.active {
 
 // member css end 
 
-.blog {
-    &__details {
-        .owl-nav button {
-            position: absolute;
-            top: 0%;
-            right: 30px;
-        }
+// .blog {
+//     &__details {
+//         .owl-nav button {
+//             position: absolute;
+//             top: 0%;
+//             right: 30px;
+//         }
 
-        .owl-nav {
-            position: absolute;
-            right: 30px;
-            top: -50px;
-        }
+//         .owl-nav {
+//             position: absolute;
+//             right: 30px;
+//             top: -50px;
+//         }
 
-        &__list {
-            &__box {
-                border: 1px solid $border-color;
-                border-radius: 20px;
-                overflow: hidden;
-                background-color: $light-bg-color;
+//         &__list {
+//             &__box {
+//                 border: 1px solid $border-color;
+//                 border-radius: 20px;
+//                 overflow: hidden;
+//                 background-color: $light-bg-color;
 
-                .logo-img {
-                    height: 100%;
+//                 .logo-img {
+//                     height: 100%;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
+//                     img {
+//                         width: 100%;
+//                         height: 100%;
+//                         object-fit: cover;
+//                     }
+//                 }
 
-                .blog-text {
-                    height: 100%;
-                    padding: 30px 20px;
+//                 .blog-text {
+//                     height: 100%;
+//                     padding: 30px 20px;
 
-                    h3 {
-                        margin-bottom: 15px;
-                        line-height: 36px;
+//                     h3 {
+//                         margin-bottom: 15px;
+//                         line-height: 36px;
 
-                    }
+//                     }
 
-                    p {
-                        line-height: 26px;
-                        margin: 16px 0px;
-                        font-family: $font-roboto;
+//                     p {
+//                         line-height: 26px;
+//                         margin: 16px 0px;
+//                         font-family: $font-roboto;
 
-                    }
-                }
+//                     }
+//                 }
 
-                span {
-                    display: block;
-                    font-size: 16px;
-                    /* font-weight: 500; */
-                    margin-bottom: 15px;
-                    color: #343a40;
+//                 span {
+//                     display: block;
+//                     font-size: 16px;
+//                     /* font-weight: 500; */
+//                     margin-bottom: 15px;
+//                     color: #343a40;
 
-                }
+//                 }
 
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
-}
+// }
 
 // blog css end 
 
-.news {
-    &__details {
-        &__list {
-            &__box {
-                border: 1px solid $border-color;
-                border-radius: 20px;
-                overflow: hidden;
+// .news {
+//     &__details {
+//         &__list {
+//             &__box {
+//                 border: 1px solid $border-color;
+//                 border-radius: 20px;
+//                 overflow: hidden;
 
-                .logo-img {
-                    height: 100%;
+//                 .logo-img {
+//                     height: 100%;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
+//                     img {
+//                         width: 100%;
+//                         height: 100%;
+//                         object-fit: cover;
+//                     }
+//                 }
 
-                .news-text {
-                    height: 100%;
-                    padding: 30px 20px;
+//                 .news-text {
+//                     height: 100%;
+//                     padding: 30px 20px;
 
-                    h3 {
+//                     h3 {
 
-                        margin-bottom: 15px;
-                        line-height: 36px;
-                        font-family: $font-roboto;
-                        font-size: 1.5rem;
-                    }
+//                         margin-bottom: 15px;
+//                         line-height: 36px;
+//                         font-family: $font-roboto;
+//                         font-size: 1.5rem;
+//                     }
 
-                    p {
-                        line-height: 26px;
-                        margin: 16px 0px;
-                        font-family: $font-roboto;
+//                     p {
+//                         line-height: 26px;
+//                         margin: 16px 0px;
+//                         font-family: $font-roboto;
 
-                    }
-                }
+//                     }
+//                 }
 
-                span {
-                    display: block;
-                    font-size: 16px;
-                    /* font-weight: 500; */
-                    margin-bottom: 15px;
-                    color: #343a40;
+//                 span {
+//                     display: block;
+//                     font-size: 16px;
+//                     /* font-weight: 500; */
+//                     margin-bottom: 15px;
+//                     color: #343a40;
 
-                }
+//                 }
 
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
-}
+// }
 
 .faq {
     .accordion-button:not(.collapsed) {
@@ -1199,6 +1207,8 @@ button.owl-dot.active {
         visibility: visible;
         transform: translateY(0);
         transition: all 0.3s ease;
+        border-top: 3px solid #008929;
+        overflow: hidden;
       }
     
       .navbar .dropdown-menu {
