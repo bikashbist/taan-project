@@ -257,7 +257,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(251, 251, 251, 0.9843137255);
-  background: rgba(0, 0, 0, 0.3803921569);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(9, 9, 121, 0));
   z-index: 1;
 }
 .inner-banner__navbar {
