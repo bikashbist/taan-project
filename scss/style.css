@@ -161,10 +161,17 @@
 .section-trail__details .owl-nav button.disabled {
   opacity: 1 !important;
 }
+.section-trail__details__list {
+  height: 100%;
+}
 .section-trail__details__list__box {
-  margin: 20px 0px 0px;
+  /* margin: 20px 0px 0px; */
   position: relative;
   height: auto;
+  border: 1px solid #ccc;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .section-trail__details__list__box .logo-img {
   height: 100%;
@@ -179,6 +186,8 @@
 }
 .section-trail__details__list__box .text {
   color: #000000;
+  color: #000000;
+  padding: 5px 20px 20px 20px;
 }
 .section-trail__details__list__box .text a {
   color: #212529;

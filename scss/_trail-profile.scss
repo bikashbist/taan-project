@@ -212,12 +212,15 @@
         }
 
         &__list {
+            height: 100%;
             &__box {
-                // border: 1px solid $border-color;
-              
-                margin: 20px 0px 0px;
-                position: relative;
-                height: auto;
+           /* margin: 20px 0px 0px; */
+            position: relative;
+            height: auto;
+            border: 1px solid #ccc;
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
 
                 .logo-img {
                     height: 100%;
@@ -234,6 +237,9 @@
 
                 .text {
                     color: $black-color;
+                    color: #000000;
+                    padding: 5px 20px 20px 20px;
+                 
                     a{
                         color: #212529;
                     }
