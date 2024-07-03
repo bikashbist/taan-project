@@ -474,8 +474,12 @@ button.owl-dot.active {
             color: $black-color;
             text-decoration: none;
             border-bottom: 1px solid #f1f1f1;
+            transition: 0.3s ease;
             &:first-child{
                 border-top: 1px solid #f1f1f1;
+            }
+            &:hover{
+                color: $primary-color;
             }
         }
     }

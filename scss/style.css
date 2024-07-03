@@ -1433,9 +1433,13 @@ button.owl-dot.active {
   color: #000000;
   text-decoration: none;
   border-bottom: 1px solid #f1f1f1;
+  transition: 0.3s ease;
 }
 .member-menu.member-menu-items a:first-child {
   border-top: 1px solid #f1f1f1;
+}
+.member-menu.member-menu-items a:hover {
+  color: #4DA42F;
 }
 
 .navbar .dropdown-menu {
