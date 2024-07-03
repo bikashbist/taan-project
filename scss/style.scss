@@ -494,6 +494,7 @@ button.owl-dot.active {
 
 // member css end 
 .destination {
+    background: #2f56bc;
     &__details {
         .owl-nav button.disabled {
             opacity: 1 !important;
@@ -534,7 +535,6 @@ button.owl-dot.active {
                     display: flex;
                     align-items: end;
                     justify-content: center;
-                    padding-bottom: 64px;
                 }
 
                 .price-tag {

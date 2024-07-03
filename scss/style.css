@@ -1442,6 +1442,9 @@ button.owl-dot.active {
   justify-content: center;
 }
 
+.destination {
+  background: #2f56bc;
+}
 .destination__details .owl-nav button.disabled {
   opacity: 1 !important;
 }
@@ -1475,7 +1478,6 @@ button.owl-dot.active {
   display: flex;
   align-items: end;
   justify-content: center;
-  padding-bottom: 64px;
 }
 .destination__details__list__box .price-tag {
   position: absolute;
