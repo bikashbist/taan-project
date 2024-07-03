@@ -423,11 +423,11 @@ a {
     right: -20px;
 }
 
-.owl-nav button.disabled {
-    opacity: 0.5;
-    background: $primary-color !important;
-    color: $white-color !important;
-}
+// .owl-nav button.disabled {
+//     opacity: 0.5;
+//     background: $primary-color !important;
+//     color: $white-color !important;
+// }
 
 button.owl-dot {
     width: 15px;
@@ -447,11 +447,48 @@ button.owl-dot.active {
 }
 
 // owl slider css end
+.member-menu {
+    .member-count{
+        background: $primary-color;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100%;
+        a{
+            color: #fff;
+        }
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    &.member-menu-items{
+        width: 300px!important;
+        a{
+            display: block;
+            line-height: 36px;
+            font-weight: 600;
+            font-size: 16px;
+            color: $black-color;
+            text-decoration: none;
+            border-bottom: 1px solid #f1f1f1;
+            &:first-child{
+                border-top: 1px solid #f1f1f1;
+            }
+        }
+    }
+
+}
+.navbar .dropdown-menu {
+    padding: 0;
+}
 .members {
 
     &__details {
         .owl-nav button.disabled {
-            opacity: 1 !important;
+            opacity: -1 !important;
 
         }
 
@@ -496,9 +533,18 @@ button.owl-dot.active {
 .destination {
     background: #2f56bc;
     &__details {
-        .owl-nav button.disabled {
-            opacity: 1 !important;
-
+      
+        .owl-nav button {
+            height: 48px;
+            width: 48px;
+            background: #d9d9d9 !important;
+            color: #4da32f !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.3s;
         }
 
         &__list {

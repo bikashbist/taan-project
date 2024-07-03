@@ -1390,12 +1390,6 @@ a.read-more {
   right: -20px;
 }
 
-.owl-nav button.disabled {
-  opacity: 0.5;
-  background: #4DA42F !important;
-  color: #FFFFFF !important;
-}
-
 button.owl-dot {
   width: 15px;
   height: 15px !important;
@@ -1413,8 +1407,43 @@ button.owl-dot.active {
   margin-top: 20px;
 }
 
+.member-menu .member-count {
+  background: #4DA42F;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+}
+.member-menu .member-count a {
+  color: #fff;
+}
+.member-menu a {
+  text-decoration: none;
+}
+.member-menu.member-menu-items {
+  width: 300px !important;
+}
+.member-menu.member-menu-items a {
+  display: block;
+  line-height: 36px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f1f1;
+}
+.member-menu.member-menu-items a:first-child {
+  border-top: 1px solid #f1f1f1;
+}
+
+.navbar .dropdown-menu {
+  padding: 0;
+}
+
 .members__details .owl-nav button.disabled {
-  opacity: 1 !important;
+  opacity: -1 !important;
 }
 .members__details__list__box {
   border: 1px solid #D9D9D9;
@@ -1445,8 +1474,17 @@ button.owl-dot.active {
 .destination {
   background: #2f56bc;
 }
-.destination__details .owl-nav button.disabled {
-  opacity: 1 !important;
+.destination__details .owl-nav button {
+  height: 48px;
+  width: 48px;
+  background: #d9d9d9 !important;
+  color: #4da32f !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 .destination__details__list__box {
   border: 1px solid #D9D9D9;

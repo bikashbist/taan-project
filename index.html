@@ -42,11 +42,32 @@
               aria-expanded="false">
               Members <i class="fas fa-chevron-down dropdown-icon"></i>
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="member.html">Associate Member</a></li>
-              <li><a class="dropdown-item" href="member-page.html">Associate Member Detail</a></li>
-              <li><a class="dropdown-item" href="package-details.html">Associate Member Package Detail </a></li>
-            </ul>
+            <div class="dropdown-menu d-flex ">
+              <div class="member-menu">
+                <div class="member-count">
+                  <div class="count-number text-center">
+                    <a href="member.html">
+                      <span class="text-white text-center">Total Member</span> <br>
+                    <h3 class="text-white text-center">
+                      2500
+                    </a>
+                    
+                    </h3>
+                  </div>
+                
+                </div>
+              </div>
+              <div class="member-menu member-menu-items w-100 p-3" >
+                <a href="member.html">General Members</a>
+                <a href="member.html">Associate Members</a>
+                <a href="member.html"> Regional Association Members</a>
+                <!-- <li><a class="dropdown-item" href="member.html">Associate Member</a></li>
+                <li><a class="dropdown-item" href="member-page.html">Associate Member Detail</a></li>
+                <li><a class="dropdown-item" href="package-details.html">Associate Member Package Detail </a></li> -->
+              </div>
+             
+             
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="trail.html" role="button" data-bs-toggle="dropdown"
@@ -77,7 +98,7 @@
           </li>
         </ul>
         <div class="d-flex align-items-center mobile-r-c" role="search">
-          <a href="#"><button class="btn btn-login be-member" type="submit">Sign In</button></a>
+          <a href="login.html"><button class="btn btn-login be-member" type="submit">Sign In</button></a>
           <a href="#"><button class="btn btn-signup btn-bg ms-2" type="submit"><i class="fa-regular fa-user"></i>
               Become a member
             </button></a>
