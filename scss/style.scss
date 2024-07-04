@@ -30,7 +30,8 @@ body {
     font-family: $font-roboto;
     position: relative;
 }
-h5{
+
+h5 {
     font-family: $font-roboto;
 }
 
@@ -142,7 +143,7 @@ img.img {
             font-family: "Poppins", sans-serif;
             font-size: 16px;
             font-weight: 600;
-            padding: 28px  15px !important;
+            padding: 28px 15px !important;
             display: inline-block;
             /* letter-spacing: 0.7px; */
             /* font-family: "Literata", serif; */
@@ -164,7 +165,8 @@ img.img {
         background: linear-gradient(to left, #ffffff 50%, #4DA42F 50%) right;
         background-size: 200%;
         transition: 0.5s ease-out;
-        &:hover{
+
+        &:hover {
             background-position: left;
             color: #fff;
         }
@@ -265,12 +267,13 @@ img.img {
             max-width: 100%;
             line-height: 48px;
             background: #ffffff;
+
             #searchInput {
                 border: none;
                 outline: none;
                 box-shadow: none;
             }
-    
+
             #searchInput:focus {
                 outline: none;
                 box-shadow: none;
@@ -308,7 +311,8 @@ img.img {
         }
     }
 }
-.view-all{
+
+.view-all {
     padding: 8px 16px;
     text-decoration: none;
     display: block;
@@ -318,7 +322,7 @@ img.img {
     display: inline-block;
     background: #4da42f;
 
-    &:before{
+    &:before {
         position: absolute;
         content: "";
         right: 0;
@@ -346,6 +350,7 @@ a {
     background-image: url(../images/slider/slider.jpg);
     background-size: cover;
     position: relative;
+
     &::before {
         content: '';
         position: absolute;
@@ -356,10 +361,12 @@ a {
         background-color: rgba(0, 128, 0, 0.6); // Nice green with 30% opacity
         z-index: 1; // Ensure it is behind the content
     }
-    > * {
+
+    >* {
         position: relative;
         z-index: 2; // Ensure direct children are above the pseudo-element
     }
+
     img {
 
         height: 110px;
@@ -367,6 +374,7 @@ a {
         object-fit: contain;
 
     }
+
     .logo-img {
         background: white;
         padding: 30px 0px;
@@ -467,6 +475,7 @@ button.owl-dot.active {
     border-radius: 5px;
     border: 1px solid #d9d9d9;
 }
+
 .scrollToTop {
     position: fixed;
     right: 30px;
@@ -476,22 +485,24 @@ button.owl-dot.active {
     transition: all ease 0.4s;
     z-index: 96;
 }
+
 .scrollToTop.show {
     bottom: 60px;
     opacity: 1;
     visibility: visible;
 }
 
-.scroll-btn{
+.scroll-btn {
     @keyframes spin {
         from {
             transform: rotate(0deg);
         }
+
         to {
             transform: rotate(360deg);
         }
     }
-    
+
     &::before {
         content: "";
         position: absolute;
@@ -505,10 +516,10 @@ button.owl-dot.active {
         border: 2px dashed $primary-color;
         transition: all ease 0.4s;
         animation: spin 13s infinite linear;
-       
+
     }
-  
-   
+
+
     i {
         display: inline-block;
         background-color: $primary-color;
@@ -523,32 +534,37 @@ button.owl-dot.active {
         position: relative;
         transition: all ease 0.8s;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
-        &:hover{
+
+        &:hover {
             background-color: #ff4a52;
         }
     }
-    
+
 }
 
 .sub-menu {
-    .sub-count{
+    .sub-count {
         background: $primary-color;
         padding: 20px;
         display: flex;
         justify-content: center;
         width: 100px;
         height: 100%;
-        a{
+
+        a {
             color: #fff;
         }
     }
-    a{
+
+    a {
         text-decoration: none;
-        
+
     }
-    &.sub-menu-items{
-        width: 350px!important;
-        a{
+
+    &.sub-menu-items {
+        width: 350px !important;
+
+        a {
             display: block;
             line-height: 28px;
             /* padding: 5px 0px; */
@@ -559,11 +575,12 @@ button.owl-dot.active {
             border-bottom: 1px solid #f1f1f1;
             transition: 0.3s ease;
             padding: 8px 20px;
-        
-            &:first-child{
+
+            &:first-child {
                 border-top: 1px solid #f1f1f1;
             }
-            &:hover{
+
+            &:hover {
                 color: $primary-color;
                 color: #ffffff;
                 background: $primary-color;
@@ -572,9 +589,11 @@ button.owl-dot.active {
     }
 
 }
+
 .navbar .dropdown-menu {
     padding: 0;
 }
+
 .members {
 
     &__details {
@@ -623,8 +642,9 @@ button.owl-dot.active {
 // member css end 
 .destination {
     background: #2f56bc;
+
     &__details {
-      
+
         .owl-nav button {
             height: 48px;
             width: 48px;
@@ -647,22 +667,22 @@ button.owl-dot.active {
                 position: relative;
                 height: 350px;
                 overflow: hidden;
-              
-                &:hover{
+
+                &:hover {
                     img {
-                        transform: scale(1.1);   
+                        transform: scale(1.1);
                     }
-                   
+
                 }
 
                 .logo-img {
                     height: 100%;
-                   
+
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        transition: 0.5s ease-in-out!important;
+                        transition: 0.5s ease-in-out !important;
                     }
                 }
 
@@ -954,7 +974,6 @@ button.owl-dot.active {
         background-color: $secondary-color;
         color: $white-color;
         border-radius: 5px;
-
         .support-message {
             padding: 50px 30px 50px 50px;
             font-family: "Roboto", serif;
@@ -963,7 +982,8 @@ button.owl-dot.active {
                 font-size: 35px;
                 font-family: $font-taviraj;
             }
-            h4{
+
+            h4 {
                 font-family: $font-taviraj;
             }
 
@@ -977,7 +997,6 @@ button.owl-dot.active {
                 border-radius: 30px;
                 border: none;
                 font-weight: 500;
-
             }
 
         }
@@ -994,7 +1013,7 @@ button.owl-dot.active {
 
 //accrediation css start
 .accrediation {
-  
+
     .partners-list {
         .partners {
             border: 1px solid $border-color;
@@ -1020,7 +1039,7 @@ button.owl-dot.active {
     &__wrapper {
         position: relative;
         overflow: hidden;
-      
+
     }
 
     &__play-icon {
@@ -1046,6 +1065,7 @@ button.owl-dot.active {
             -ms-flex-pack: center;
             justify-content: center;
             width: 55px;
+
             &::before {
                 position: absolute;
                 content: "";
@@ -1061,8 +1081,6 @@ button.owl-dot.active {
             &::after {
                 position: absolute;
                 content: "";
-                /* top: calc(50% - 40px); */
-                /* left: calc(50% - 40px); */
                 width: 60px;
                 height: 60px;
                 border: 1px solid #fff;
@@ -1071,11 +1089,12 @@ button.owl-dot.active {
                 transition: 0.3s linear color;
                 z-index: 1;
             }
-            
+
             @keyframes zoominout {
                 0% {
                     transform: scale(1);
                 }
+
                 100% {
                     transform: scale(1.5);
                 }
@@ -1091,8 +1110,6 @@ button.owl-dot.active {
                 border-radius: 50%;
             }
         }
-
-
     }
 }
 
@@ -1108,6 +1125,7 @@ button.owl-dot.active {
         font-weight: 500;
         border-radius: 30px;
     }
+
     .tour_attribute_share a {
         border: 1px solid #ff4a52;
         padding: 4px 13px;
@@ -1275,27 +1293,39 @@ button.owl-dot.active {
     }
 
 }
+
 @media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-icon {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      /* Ensure the arrow transitions smoothly */
+      .navbar .dropdown-icon {
+        transition: transform 0.3s ease-in-out;
+      }
     .navbar .dropdown:hover .dropdown-menu {
-      display: block;
-      margin-top: 0; /* Remove margin if necessary */
+        display: block;
+        margin-top: 0;
+        /* Remove margin if necessary */
     }
-  
-    .navbar .dropdown-toggle::after {
-      border-top: 0.3em solid transparent;
-      border-right: 0.3em solid;
-      display: none;
-      border-bottom: 0.3em solid transparent;
-      border-left: 0.3em solid transparent;
+
+    .navbar::after {
+        border-top: 0.3em solid transparent;
+        border-right: 0.3em solid;
+        display: none;
+        border-bottom: 0.3em solid transparent;
+        border-left: 0.3em solid transparent;
     }
-  
-    .dropdown-toggle .dropdown-icon {
-      transition: transform 0.3s ease;
+
+    .dropdown-icon {
+        transition: transform 0.3s ease;
     }
-  
-    .dropdown:hover .dropdown-toggle .dropdown-icon {
-      transform: rotate(180deg);
+
+    .dropdown:hover .dropdown-icon {
+        transform: rotate(180deg);
     }
+
     .navbar .dropdown:hover .dropdown-menu {
         display: block;
         opacity: 1;
@@ -1304,25 +1334,22 @@ button.owl-dot.active {
         transition: all 0.3s ease;
         border-top: 3px solid #008929;
         overflow: hidden;
-      }
-    
-      .navbar .dropdown-menu {
+    }
+
+    .navbar .dropdown-menu {
         display: block;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-20px);
         transition: all 0.3s ease;
-      }
-    
-      .dropdown-toggle .dropdown-icon {
+    }
+
+    .dropdown-icon {
         transition: transform 0.3s ease;
-      }
-    
-      .dropdown:hover .dropdown-toggle .dropdown-icon {
+    }
+
+    .dropdown:hover .dropdown-icon {
         transform: rotate(180deg);
-      }
-      
-  }
+    }
 
-
-  
+}
