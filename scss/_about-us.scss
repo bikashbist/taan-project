@@ -1,0 +1,62 @@
+.about-us{
+    h1{
+        margin: 0 0 20px;
+        font-size: 48px;
+        font-weight: 600;
+        font-family: $font-taviraj;
+    }
+    .an-user {
+        .image-big {
+            height: 90px;
+            width: 90px;
+            margin: 0 20px 0 0;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .image{
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .text{
+            .name{
+                font-family: $font-taviraj;
+                font-weight: 700;
+            }
+            p{
+                font-family: $font-roboto;
+                font-size: 16px;
+            }
+        }
+    }
+    .check-list{
+        padding-left: 0px;
+    }
+    .check-list li {
+        position: relative;
+        list-style-type: none;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .check-list li::before {
+        content: "\f00c"; 
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $primary-color;
+        font-size: 16px; 
+    }
+    strong{
+        color: $primary-color;
+    }
+    h5{
+        margin-bottom: 20px;
+        display:inline-block;
+    }
+}

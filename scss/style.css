@@ -259,6 +259,62 @@
   padding-bottom: 0px;
 }
 
+.about-us h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Taviraj", serif;
+}
+.about-us .an-user .image-big {
+  height: 90px;
+  width: 90px;
+  margin: 0 20px 0 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about-us .an-user .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.about-us .an-user .text .name {
+  font-family: "Taviraj", serif;
+  font-weight: 700;
+}
+.about-us .an-user .text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.about-us .check-list {
+  padding-left: 0px;
+}
+.about-us .check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.about-us .check-list li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4DA42F;
+  font-size: 16px;
+}
+.about-us strong {
+  color: #4DA42F;
+}
+.about-us h5 {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
 .inner-banner {
   position: relative;
   width: 100%;
