@@ -1068,6 +1068,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .b-member {
@@ -1193,12 +1194,14 @@ img.img {
   background-color: #4DA42F;
   border-radius: 30px;
   position: relative;
-  background: linear-gradient(to left, #4DA42F 50%, #1D8348 50%) right;
+  background: linear-gradient(to left, #4DA42F 50%, #ffffff 50%) right;
   background-size: 200%;
   transition: 0.5s ease-out;
 }
 .navbar .btn-signup:hover {
   background-position: left;
+  border: 1px solid #4DA42F;
+  color: #000000;
 }
 
 .banner img {
@@ -1424,25 +1427,70 @@ button.owl-dot.active {
   margin-top: 20px;
 }
 
-.member-menu .member-count {
+.scrollToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 500px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.4s;
+  z-index: 96;
+}
+
+.scrollToTop.show {
+  bottom: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-btn::before {
+  content: "";
+  position: absolute;
+  left: var(--extra-shape, -6px);
+  top: var(--extra-shape, -6px);
+  right: var(--extra-shape, -6px);
+  bottom: var(--extra-shape, -6px);
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px dashed #4DA42F;
+  transition: all ease 0.4s;
+  animation: spin 13s infinite linear;
+}
+.scroll-btn i {
+  display: inline-block;
+  background-color: #4DA42F;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  width: var(--btn-size, 50px);
+  height: var(--btn-size, 50px);
+  line-height: var(--btn-size, 50px);
+  z-index: 2;
+  border-radius: 50%;
+  position: relative;
+  transition: all ease 0.8s;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.sub-menu .sub-count {
   background: #4DA42F;
   padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100px;
   height: 100%;
 }
-.member-menu .member-count a {
+.sub-menu .sub-count a {
   color: #fff;
 }
-.member-menu a {
+.sub-menu a {
   text-decoration: none;
 }
-.member-menu.member-menu-items {
-  width: 300px !important;
+.sub-menu.sub-menu-items {
+  width: 350px !important;
 }
-.member-menu.member-menu-items a {
+.sub-menu.sub-menu-items a {
   display: block;
   line-height: 36px;
   font-weight: 600;
@@ -1451,12 +1499,15 @@ button.owl-dot.active {
   text-decoration: none;
   border-bottom: 1px solid #f1f1f1;
   transition: 0.3s ease;
+  padding: 4px 20px;
 }
-.member-menu.member-menu-items a:first-child {
+.sub-menu.sub-menu-items a:first-child {
   border-top: 1px solid #f1f1f1;
 }
-.member-menu.member-menu-items a:hover {
+.sub-menu.sub-menu-items a:hover {
   color: #4DA42F;
+  color: #ffffff;
+  background: #4DA42F;
 }
 
 .navbar .dropdown-menu {
@@ -1693,6 +1744,7 @@ button.owl-dot.active {
 }
 .video__wrapper {
   position: relative;
+  overflow: hidden;
 }
 .video__play-icon {
   position: absolute;
@@ -1725,10 +1777,10 @@ button.owl-dot.active {
 .video__play-icon span::after {
   position: absolute;
   content: "";
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
-  width: 80px;
-  height: 80px;
+  /* top: calc(50% - 40px); */
+  /* left: calc(50% - 40px); */
+  width: 60px;
+  height: 60px;
   border: 1px solid #fff;
   border-radius: 50%;
   animation: zoominout 2s infinite linear alternate-reverse;
@@ -1747,7 +1799,10 @@ button.owl-dot.active {
   font-size: 1.75rem;
   z-index: 2;
   position: relative;
-  color: #4da42f;
+  color: #ffffff;
+  background: #4da42f;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 @media (max-width: 1339.98px) {

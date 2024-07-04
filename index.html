@@ -43,13 +43,38 @@
               Members <i class="fas fa-chevron-down dropdown-icon"></i>
             </a>
             <div class="dropdown-menu d-flex ">
-              <div class="member-menu">
-                <div class="member-count">
-                  <div class="count-number text-center">
+              <div class="sub-menu">
+                <div class="sub-count">
+                  <div class="count-number">
                     <a href="member.html">
-                      <span class="text-white text-center">Total Member</span> <br>
-                    <h3 class="text-white text-center">
+                      <span class="text-white">Total Member</span> <br>
+                    <h3 class="text-white">
                       2500
+                    </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-menu sub-menu-items w-100" >
+                <a href="member.html">General Members</a>
+                <a href="member.html">Associate Members</a>
+                <a href="member.html"> Regional Association Members</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Trail Profile <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu d-flex ">
+              <div class="sub-menu">
+                <div class="sub-count">
+                  <div class="count-number ">
+                    <a href="#">
+                      <span class="text-white ">Trail Profile</span> <br>
+                    <h3 class="text-white ">
+                      25
                     </a>
                     
                     </h3>
@@ -57,19 +82,22 @@
                 
                 </div>
               </div>
-              <div class="member-menu member-menu-items w-100 p-3" >
-                <a href="member.html">General Members</a>
-                <a href="member.html">Associate Members</a>
-                <a href="member.html"> Regional Association Members</a>
-                <!-- <li><a class="dropdown-item" href="member.html">Associate Member</a></li>
-                <li><a class="dropdown-item" href="member-page.html">Associate Member Detail</a></li>
-                <li><a class="dropdown-item" href="package-details.html">Associate Member Package Detail </a></li> -->
+              <div class="sub-menu sub-menu-items w-100 " >
+               <a  href="trail.profile.html">Trail Profile</a>
+               <a  href="trail-details.html">Everest Base Camp Trek</a>
+               <a  href="trail-package-details.html">Everest Base Camp Trek
+                    Detail</a>
+                    <a  href="trail.profile.html">Trail Profile</a>
+                    <a  href="trail-details.html">Everest Base Camp Trek</a>
+                    <a  href="trail-package-details.html">Everest Base Camp Trek
+                         Detail</a>
+          
               </div>
              
              
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="trail.html" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Trail Profile <i class="fas fa-chevron-down dropdown-icon"></i>
@@ -80,7 +108,7 @@
               <li><a class="dropdown-item" href="trail-package-details.html" target="_blank">Everest Base Camp Trek
                   Detail</a></li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link " href="#" role="button">
               About us
@@ -1698,7 +1726,7 @@
 
   </footer>
 
-
+  <a href="#" class="scrollToTop scroll-btn show"><i class="fa-solid fa-arrow-up"></i></a>
 
   <!-- footer end-->
   <script src="js/jquery-3.6.0.min.js"></script>
@@ -1711,6 +1739,28 @@
     Fancybox.bind("[data-fancybox]", {
 
     });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTopButton = document.querySelector('.scrollToTop');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.classList.add('show');
+        } else {
+            scrollToTopButton.classList.remove('show');
+        }
+    });
+
+    scrollToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
   </script>
   <script>
     $('.owl-achivement').owlCarousel({
