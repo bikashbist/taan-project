@@ -29,6 +29,9 @@ body {
     font-family: $font-roboto;
     position: relative;
 }
+h5{
+    font-family: $font-roboto;
+}
 
 .b-member {
     border: 1px solid #4da42f;
@@ -157,7 +160,7 @@ img.img {
         font-weight: 500;
         border-radius: 30px;
         position: relative;
-        background: linear-gradient(to left, #ffffff 50%, #1D8348 50%) right;
+        background: linear-gradient(to left, #ffffff 50%, #4DA42F 50%) right;
         background-size: 200%;
         transition: 0.5s ease-out;
         &:hover{
@@ -460,7 +463,7 @@ button.owl-dot.active {
 // owl slider css end
 .trip-advisor {
     background: #f2f7f1;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid #d9d9d9;
 }
 .scrollToTop {
@@ -479,6 +482,15 @@ button.owl-dot.active {
 }
 
 .scroll-btn{
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
     &::before {
         content: "";
         position: absolute;
@@ -492,7 +504,9 @@ button.owl-dot.active {
         border: 2px dashed $primary-color;
         transition: all ease 0.4s;
         animation: spin 13s infinite linear;
+       
     }
+  
    
     i {
         display: inline-block;
@@ -508,6 +522,9 @@ button.owl-dot.active {
         position: relative;
         transition: all ease 0.8s;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
+        &:hover{
+            background-color: #ff4a52;
+        }
     }
     
 }
@@ -532,14 +549,15 @@ button.owl-dot.active {
         width: 350px!important;
         a{
             display: block;
-            line-height: 36px;
+            line-height: 28px;
+            /* padding: 5px 0px; */
             font-weight: 600;
             font-size: 16px;
             color: #000000;
             text-decoration: none;
             border-bottom: 1px solid #f1f1f1;
             transition: 0.3s ease;
-            padding: 4px 20px;
+            padding: 8px 20px;
         
             &:first-child{
                 border-top: 1px solid #f1f1f1;
@@ -627,14 +645,23 @@ button.owl-dot.active {
                 margin: 20px 0px;
                 position: relative;
                 height: 350px;
+                overflow: hidden;
+              
+                &:hover{
+                    img {
+                        transform: scale(1.1);   
+                    }
+                   
+                }
 
                 .logo-img {
                     height: 100%;
-
+                   
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        transition: 0.5s ease-in-out!important;
                     }
                 }
 
@@ -925,7 +952,7 @@ button.owl-dot.active {
     .support {
         background-color: $secondary-color;
         color: $white-color;
-        border-radius: 20px;
+        border-radius: 5px;
 
         .support-message {
             padding: 50px 30px 50px 50px;

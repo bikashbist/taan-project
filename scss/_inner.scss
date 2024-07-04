@@ -131,12 +131,20 @@
     &__card {
         border-radius: 5px;
         overflow: hidden;
+        &:hover{
+            img {
+                transform: scale(1.1);   
+            }
+           
+        }
         a.tour_image {
             display: block;
             position: relative;
-
+            overflow: hidden;
+            height: 200px;
             img {
                 width: 100%;
+                transition: 0.5s ease-in-out;
             }
             .tour-band{
                 position: absolute;

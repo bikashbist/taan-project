@@ -1,69 +1,46 @@
-
-//loginpage css start
-.loginpage{
-    .login{
-        background-color: $light-bg-color;
-        padding: 30px 50px;
-        width: 450px;
-        margin: 0 auto;
-
-
-        .form-logo{
-            margin: 2px auto;
-            background-color: $white-color;
-            height: 60px;
-            width: 60px;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;   
-            overflow: hidden;
+.login{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    h3{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-family: $font-taviraj;
+    }
+    a{
+        text-decoration: none;
+        color: #4da42f;
+        font-weight: 600;
+    }
+    .btn-login{
+        padding: 10px 30px;
+        border: 1px solid #4DA42F;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #4DA42F;
+        border-radius: 30px;
+        position: relative;
+        background: linear-gradient(to left, #4DA42F 50%, #ffffff 50%) right;
+        background-size: 200%;
+        transition: 0.5s ease-out;
+        &:hover{
+            background-position: left;
+            color: #000;
         }
-        .form-logo img{
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-        }
+    }
+    .form-control {
         
-        h3{
-            font-family: $font-taviraj;
-            font-size: 35px;
-            color: $primary-color;
-        }
-        
-            form{
-                line-height: 2.5;
-                label{
-                    color: rgb(102, 101, 101);
-                }
-                input{
-                    border-radius: 40px;
-                    width: 100%;
-                    padding: 5px 5px 5px 25px;
-                    border: 1px solid $border-color;
-                }
-                button{
-                    padding: 5px 5px 5px 25px;
-                    background-color: $primary-color;
-                    border: 1px solid $primary-color;
-                    color: $white-color;
-                    font-weight: 500;
-                    border-radius: 30px;
-                    width: 100%;
-                    margin-top: 5px;
-
-                }
-                button:hover{
-                    background-color: #f8f9fa;
-                    color: $black-color;
-                    border: 2px solid $primary-color;
-                }
-                small{
-                    color: $primary-color;
-                }
-            
-
-        }
-        
+        border-radius: 4px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        background: transparent;
+        border: 1px solid #dcdcdc;
+        line-height: 1.5;
+        transition: 0.3s;
+        color: #909090;
+        line-height: 34px;
     }
 }

@@ -173,16 +173,22 @@
   border-radius: 5px;
   overflow: hidden;
 }
+.section-trail__details__list__box:hover img {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
 .section-trail__details__list__box .logo-img {
   height: 100%;
   height: 200px;
   position: relative;
+  overflow: hidden;
 }
 .section-trail__details__list__box .logo-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s ease-in-out;
 }
 .section-trail__details__list__box .text {
   color: #000000;
@@ -364,12 +370,18 @@
   border-radius: 5px;
   overflow: hidden;
 }
+.trail-packages__card:hover img {
+  transform: scale(1.1);
+}
 .trail-packages__card a.tour_image {
   display: block;
   position: relative;
+  overflow: hidden;
+  height: 200px;
 }
 .trail-packages__card a.tour_image img {
   width: 100%;
+  transition: 0.5s ease-in-out;
 }
 .trail-packages__card a.tour_image .tour-band {
   position: absolute;
@@ -956,62 +968,50 @@
   color: #4da42f;
 }
 
-.loginpage .login {
-  background-color: #F2F4F4;
-  padding: 30px 50px;
-  width: 450px;
-  margin: 0 auto;
+.login {
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.loginpage .login .form-logo {
-  margin: 2px auto;
-  background-color: #FFFFFF;
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.loginpage .login .form-logo img {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
-.loginpage .login h3 {
+.login h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
   font-family: "Taviraj", serif;
-  font-size: 35px;
-  color: #4DA42F;
 }
-.loginpage .login form {
-  line-height: 2.5;
+.login a {
+  text-decoration: none;
+  color: #4da42f;
+  font-weight: 600;
 }
-.loginpage .login form label {
-  color: rgb(102, 101, 101);
-}
-.loginpage .login form input {
-  border-radius: 40px;
-  width: 100%;
-  padding: 5px 5px 5px 25px;
-  border: 1px solid #D9D9D9;
-}
-.loginpage .login form button {
-  padding: 5px 5px 5px 25px;
-  background-color: #4DA42F;
+.login .btn-login {
+  padding: 10px 30px;
   border: 1px solid #4DA42F;
   color: #FFFFFF;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #4DA42F;
   border-radius: 30px;
+  position: relative;
+  background: linear-gradient(to left, #4DA42F 50%, #ffffff 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.login .btn-login:hover {
+  background-position: left;
+  color: #000;
+}
+.login .form-control {
+  border-radius: 4px;
   width: 100%;
-  margin-top: 5px;
-}
-.loginpage .login form button:hover {
-  background-color: #f8f9fa;
-  color: #000000;
-  border: 2px solid #4DA42F;
-}
-.loginpage .login form small {
-  color: #4DA42F;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid #dcdcdc;
+  line-height: 1.5;
+  transition: 0.3s;
+  color: #909090;
+  line-height: 34px;
 }
 
 .registerpage .register {
@@ -1069,6 +1069,10 @@
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
 }
 
 .b-member {
@@ -1178,7 +1182,7 @@ img.img {
   font-weight: 500;
   border-radius: 30px;
   position: relative;
-  background: linear-gradient(to left, #ffffff 50%, #1D8348 50%) right;
+  background: linear-gradient(to left, #ffffff 50%, #4DA42F 50%) right;
   background-size: 200%;
   transition: 0.5s ease-out;
 }
@@ -1429,7 +1433,7 @@ button.owl-dot.active {
 
 .trip-advisor {
   background: #f2f7f1;
-  border-radius: 20px;
+  border-radius: 5px;
   border: 1px solid #d9d9d9;
 }
 
@@ -1449,6 +1453,14 @@ button.owl-dot.active {
   visibility: visible;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .scroll-btn::before {
   content: "";
   position: absolute;
@@ -1478,6 +1490,9 @@ button.owl-dot.active {
   transition: all ease 0.8s;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.02);
 }
+.scroll-btn i:hover {
+  background-color: #ff4a52;
+}
 
 .sub-menu .sub-count {
   background: #4DA42F;
@@ -1498,14 +1513,15 @@ button.owl-dot.active {
 }
 .sub-menu.sub-menu-items a {
   display: block;
-  line-height: 36px;
+  line-height: 28px;
+  /* padding: 5px 0px; */
   font-weight: 600;
   font-size: 16px;
   color: #000000;
   text-decoration: none;
   border-bottom: 1px solid #f1f1f1;
   transition: 0.3s ease;
-  padding: 4px 20px;
+  padding: 8px 20px;
 }
 .sub-menu.sub-menu-items a:first-child {
   border-top: 1px solid #f1f1f1;
@@ -1571,6 +1587,10 @@ button.owl-dot.active {
   margin: 20px 0px;
   position: relative;
   height: 350px;
+  overflow: hidden;
+}
+.destination__details__list__box:hover img {
+  transform: scale(1.1);
 }
 .destination__details__list__box .logo-img {
   height: 100%;
@@ -1580,6 +1600,7 @@ button.owl-dot.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s ease-in-out !important;
 }
 .destination__details__list__box .text {
   position: absolute;
@@ -1706,7 +1727,7 @@ button.owl-dot.active {
 .taan-support .support {
   background-color: #2F56BC;
   color: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .taan-support .support .support-message {
   padding: 50px 30px 50px 50px;
