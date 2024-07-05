@@ -1263,6 +1263,66 @@ img.img {
   color: #000000;
 }
 
+.banner {
+  /* Loading overlay */
+  /* Slider container */
+  /* Each slide */
+  /* Show the active slide */
+  /* Zoom out animation */
+}
+.banner .loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.banner .spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.banner .slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+.banner .slider__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.banner .slider__image.active {
+  opacity: 1;
+  animation: zoomOut 4s ease-in-out;
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .banner img {
   width: 100%;
   /* border-radius: 20px; */
@@ -1279,7 +1339,6 @@ img.img {
   top: 0;
   bottom: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent 70%);
-  border-radius: 20px;
 }
 .banner__article {
   position: absolute;
@@ -1387,7 +1446,7 @@ a.read-more {
 }
 
 .achivements {
-  background-image: url(../images/slider/slider.jpg);
+  background-image: url(../images/trail/title-bg.jpg);
   background-size: cover;
   position: relative;
 }
@@ -1398,7 +1457,7 @@ a.read-more {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 128, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 .achivements > * {

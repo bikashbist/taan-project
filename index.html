@@ -62,8 +62,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link " href="trail.profile.html" role="button" 
-             >
+            <a class="nav-link " href="trail.profile.html" role="button">
               Trail Profile <i class="fas fa-chevron-down dropdown-icon"></i>
             </a>
             <div class="dropdown-menu d-flex ">
@@ -101,8 +100,8 @@
                 <a href="trail-details.html">Everest Base Camp Trek</a>
                 <a href="trail-package-details.html">Everest Base Camp Trek
                   Detail</a>
-                  <a href="trail-package-details.html">Everest Base Camp Trek Everest Base Camp Trek
-                    Detail</a>
+                <a href="trail-package-details.html">Everest Base Camp Trek Everest Base Camp Trek
+                  Detail</a>
 
               </div>
 
@@ -150,22 +149,24 @@
   <!-- banner start -->
   <div class="banner">
     <div class="banner__details d-flex justify-content-center">
-      <!-- <img src="images/home-banner.png" alt="banner"> -->
-      <img src="images/home-banner.png" alt="banner">
+      <div class="slider">
+        <div class="slider__image"><img src="images/home-banner.png" alt="banner"></div>
+        <div class="slider__image"><img src="images/home-banner.png" alt="banner"></div>
+        <div class="slider__image"><img src="images/home-banner.png" alt="banner"></div>
+      </div>
       <div class="banner__article">
         <div class="banner__article--content">
-          <h1>Save our Traking Trails for <br> Sustainable Tourism </h1>
+          <h1 id="typingText">Save our Trekking Trails for <br> Sustainable Tourism</h1>
           <p>Welcome to Trekking Agencies' Association of Nepal</p>
           <div class="member">
             <!--Member Search Banner-->
             <form action="#">
-              <div class="d-flex align-itemsp-center justify-content-between member__search">
+              <div class="d-flex align-items-center justify-content-between member__search">
                 <div class="member__search--input flex-fill">
                   <b><i class="fa-regular fa-user"></i></b>
-                  <input id="searchInput" class="member__search--input-type " type="text"
+                  <input id="searchInput" class="member__search--input-type" type="text"
                     placeholder="Search our General Member">
                 </div>
-
                 <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </form>
@@ -173,8 +174,8 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <!-- banner end  -->
   <!-- course-list-section -->
 
@@ -1788,6 +1789,32 @@
           behavior: 'smooth'
         });
       });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll(".slider__image");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) {
+            slide.classList.add("active");
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      // Initial display
+      showSlide(currentIndex);
+
+      // Change slide every 4 seconds
+      setInterval(nextSlide, 4000);
     });
   </script>
   <script>
